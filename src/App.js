@@ -1,8 +1,11 @@
-import "./App.css";
 import Post from "./Post/Post";
 
 function App() {
-    return <Post />;
+    return (
+        <div className="app">
+            <Post />
+        </div>
+    );
 }
 
 export default App;
