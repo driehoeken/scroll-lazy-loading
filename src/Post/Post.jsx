@@ -13,7 +13,6 @@ const Post = () => {
             "https://raw.githubusercontent.com/driehoeken/scroll-lazy-loading/master/src/data.json"
         );
         const dataJson = await data.json();
-        console.log(dataJson);
 
         setAuthorName(getRandomFromArr(dataJson.authorNames));
         setDesc(getRandomFromArr(dataJson.descriptions));
@@ -34,7 +33,7 @@ const Post = () => {
             </div>
         );
     } else {
-        return <div className="post">loading</div>;
+        return <div className="post-loading">loading</div>;
     }
 };
 
